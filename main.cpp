@@ -22,9 +22,9 @@ IndicadoresElectricos red;
 red.v_rms=calcularRMS(samples);
 red.thd=calcularTHD(fundamental,armonicos);
 cout<<"analizador de potencia modular"<<endl;
-cout<<"componente fundamental"<<fundamental<<"V"<<endl;
-cout<<"numero de armonicos"<<armonicos.size()<<endl;
+cout<<"componente fundamental: "<<fundamental<<"V"<<endl;
+cout<<"numero de armonicos: "<<armonicos.size()<<endl;
 cout<<"V_RMS total red: "<<red.v_rms<<"V"<<endl;
-cout<<"THD"<<red.thd*100.0f<<"%"<<endl;
+cout<<"THD: "<<red.thd*100.0f<<"%"<<endl;
 return 0;
 }
